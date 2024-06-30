@@ -29,28 +29,39 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "projects",
+        path: "content/projects",
         fields: [
           {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            name: "projects",
+
+            type: "object",
+            list: true,
+            templates: [
+              {
+                name: "project",
+                fields: [
+                  {
+                    name: "key",
+                    type: "string",
+                  },
+                  {
+                    name: "title",
+                    type: "string",
+                  },
+                  {
+                    name: "url",
+                    type: "string",
+                  },
+                  {
+                    name: "description",
+                    type: "rich-text",
+                  },
+                ],
+              },
+            ],
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
       },
     ],
   },
