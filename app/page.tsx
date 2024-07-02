@@ -13,17 +13,19 @@ export default async function Home() {
   });
 
   return (
-    <main className="container mx-auto p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <Image
-            src="/images/ava.jpg"
-            alt="Olek"
-            width={200}
-            height={200}
-            priority
-            className="rounded-full mb-5"
-          />
+    <main className="container mx-auto p-4 max-w-[1200px]">
+      <div className="flex flex-col md:flex-row">
+        <section className="lg:pe-10">
+          <div className="flex justify-center lg:justify-start">
+            <Image
+              src="/images/ava.jpg"
+              alt="Olek"
+              width={200}
+              height={200}
+              priority
+              className="rounded-full mb-5"
+            />
+          </div>
           <h1 className="font-bold lg:font-extrabold text-xl lg:text-4xl mb-1 lg:mb-3">
             {about.data.about.name}
           </h1>
@@ -45,13 +47,13 @@ export default async function Home() {
               <ProfileLink key={link?.name} {...link} />
             ))}
           </ul>
-        </div>
+        </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.data.projects.projects?.map((project) => (
             <ProjectBlock key={project?.key} {...project} />
           ))}
-        </div>
+        </section>
       </div>
     </main>
   );
