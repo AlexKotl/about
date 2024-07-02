@@ -1,7 +1,7 @@
 ---
 name: Olek Kotl
 description: |
-  **Fullstack developer** with love to indie projects
+  **Fullstack Developer** with love to indie projects
 links:
   - name: linkedin
     url: 'https://www.linkedin.com/in/alex-kotl/'
