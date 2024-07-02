@@ -42,14 +42,14 @@ export default async function Home() {
           </div>
           <ul className="flex justify-center items-center gap-2 lg:gap-4 lg:justify-start flex-wrap max-lg:p-6">
             {about.data.about.links?.map((link) => (
-              <ProfileLink key={link?.key} {...link} />
+              <ProfileLink key={link?.name} {...link} />
             ))}
           </ul>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {projects.data.projects.projects?.map((project) => (
-            <ProjectBlock key={project?.name} {...project} />
+            <ProjectBlock key={project?.key} {...project} />
           ))}
         </div>
       </div>
