@@ -16,10 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="container mx-auto">
-        <div className="navbar bg-base-100">
-          <a className="btn btn-ghost text-lg">Olek</a>
-        </div>
+      <body className="flex justify-center items-center min-h-screen bg-base-200">
         {children}
       </body>
     </html>

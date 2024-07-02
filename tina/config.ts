@@ -63,6 +63,47 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "about",
+        path: "content/about",
+        fields: [
+          {
+            name: "name",
+            type: "string",
+          },
+          {
+            name: "description",
+            type: "rich-text",
+          },
+          {
+            name: "links",
+            type: "object",
+            list: true,
+            templates: [
+              {
+                name: "link",
+                fields: [
+                  {
+                    name: "name",
+                    type: "string",
+                    options: [
+                      "github",
+                      "linkedin",
+                      "youtube",
+                      "instagram",
+                      "facebook",
+                    ],
+                  },
+                  {
+                    name: "url",
+                    type: "string",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 });
