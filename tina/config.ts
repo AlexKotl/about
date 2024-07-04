@@ -34,12 +34,16 @@ export default defineConfig({
         fields: [
           {
             name: "projects",
-
             type: "object",
             list: true,
             templates: [
               {
                 name: "project",
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.title };
+                  },
+                },
                 fields: [
                   {
                     name: "key",
