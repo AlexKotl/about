@@ -86,6 +86,11 @@ export default defineConfig({
             templates: [
               {
                 name: "link",
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.name };
+                  },
+                },
                 fields: [
                   {
                     name: "name",
