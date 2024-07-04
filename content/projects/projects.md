@@ -20,11 +20,9 @@ projects:
     _template: project
   - key: cats-escape
     title: "\U0001F3AE Cats Escape"
-    url: 'https://github.com/AlexKotl/cats-escape'
+    url: 'https://cats-escape.netlify.app/'
     description: |
-      Logical game with many cats and one mouse.
-
-      TODO: Add homepage
+      Logical game about lazy cats and one dumb mouse.
     _template: project
   - key: play-tennis
     title: "\U0001F3BE Play Tennis"
