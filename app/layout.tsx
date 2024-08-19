@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,6 +20,12 @@ export default function RootLayout({
       <body className="flex justify-center items-center min-h-screen bg-base-200">
         {children}
       </body>
+      <Script
+        async
+        defer
+        src="https://analytics256.netlify.app/script.js" 
+        data-website-id="1158853b-c6a7-43d5-8929-23365bfcfd09"
+      ></Script>
     </html>
   );
 }
