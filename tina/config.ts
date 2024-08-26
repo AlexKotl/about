@@ -101,6 +101,7 @@ export default defineConfig({
                       "youtube",
                       "instagram",
                       "facebook",
+                      "x",
                     ],
                   },
                   {
