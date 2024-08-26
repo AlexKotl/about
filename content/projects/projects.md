@@ -1,5 +1,11 @@
 ---
 projects:
+  - key: kartezvg
+    title: "\U0001F3E0 Karte ZVG"
+    url: 'https://kartezvg.com'
+    description: |
+      Search thousands of foreclosure properties in Germany.
+    _template: project
   - key: lesen
     title: "\U0001F4D9 Lesen"
     url: 'https://read-learn.netlify.app/'
