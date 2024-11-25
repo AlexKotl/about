@@ -1,5 +1,11 @@
 ---
 projects:
+  - key: musik
+    title: "\U0001F4BF My music"
+    url: 'https://soundcloud.com/slicer256'
+    description: |
+      Check out my music I write on SoundCloud platform
+    _template: project
   - key: lesen
     title: "\U0001F4D9 Lesen"
     url: 'https://read-learn.netlify.app/'
