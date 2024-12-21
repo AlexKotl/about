@@ -1,5 +1,11 @@
 ---
 projects:
+  - key: timer
+    title: ⌛ Productivity Rabbit
+    description: >
+      Time tracking app for Panic PlayDate console. Track your working time,
+      view reports, upgrade rabbit's hole.
+    _template: project
   - key: lesen
     title: "\U0001F4D9 Lesen"
     url: 'https://read-learn.netlify.app/'
