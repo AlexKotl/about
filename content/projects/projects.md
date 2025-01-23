@@ -1,7 +1,8 @@
 ---
 projects:
   - key: timer
-    title: ⌛ Productivity Rabbit
+    title: "\U0001F430 Productivity Rabbit"
+    url: 'https://slicer256.itch.io/productivity-rabbit'
     description: >
       Time tracking app for Panic PlayDate console. Track your working time,
       view reports, upgrade rabbit's hole.
