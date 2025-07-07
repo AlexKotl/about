@@ -114,6 +114,33 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "hobbies",
+        path: "content/hobbies",
+        fields: [
+          {
+            name: "hobbies",
+            type: "object",
+            list: true,
+            templates: [
+              {
+                name: "hobby",
+                ui: {
+                  itemProps: (item) => {
+                    return { label: item?.name };
+                  },
+                },
+                fields: [
+                  {
+                    name: "name",
+                    type: "string",
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 });
