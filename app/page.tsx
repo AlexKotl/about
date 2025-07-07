@@ -51,20 +51,15 @@ export default async function Home() {
             ))}
           </ul>
 
-          <div className="mt-6">
-            <h3 className="text-lg font-semibold mb-3 text-center lg:text-left">
-              Hobbies
-            </h3>
-            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              {hobbies.data.hobbies.hobbies?.map((hobby) => (
-                <span
-                  key={hobby?.name}
-                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
-                >
-                  {hobby?.name}
-                </span>
-              ))}
-            </div>
+          <div className="my-8 my-2 flex flex-wrap gap-2 justify-center lg:justify-start">
+            {hobbies.data.hobbies.hobbies?.map((hobby: any) => (
+              <span
+                key={hobby?.name}
+                className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors"
+              >
+                {hobby?.name}
+              </span>
+            ))}
           </div>
         </section>
 
