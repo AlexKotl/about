@@ -41,7 +41,7 @@ export default defineConfig({
                 name: "project",
                 ui: {
                   itemProps: (item) => {
-                    return { label: item?.title };
+                    return { label: `${item?.title} (${item?.flag})` };
                   },
                 },
                 fields: [
@@ -60,6 +60,14 @@ export default defineConfig({
                   {
                     name: "description",
                     type: "rich-text",
+                  },
+                  {
+                    name: "flag",
+                    type: "string",
+                    options: ["online", "discontinued", "hidden"],
+                    ui: {
+                      component: "select",
+                    },
                   },
                 ],
               },

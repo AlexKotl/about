@@ -64,9 +64,11 @@ export default async function Home() {
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.data.projects.projects?.map((project) => (
-            <ProjectBlock key={project?.key} {...project} />
-          ))}
+          {projects.data.projects.projects
+            ?.filter((project) => project?.flag !== "hidden")
+            ?.map((project) => (
+              <ProjectBlock key={project?.key} {...project} />
+            ))}
         </section>
       </div>
     </main>
