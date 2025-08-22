@@ -1,6 +1,12 @@
 ---
 hobbies:
-  - name: plane pilot
+  - name: guitars
+    _template: hobby
+  - name: tennis
+    _template: hobby
+  - name: music writing
+    _template: hobby
+  - name: motorcycles
     _template: hobby
   - name: retro cars
     _template: hobby
@@ -12,13 +18,7 @@ hobbies:
     _template: hobby
   - name: bicycles
     _template: hobby
-  - name: motorcycles
-    _template: hobby
-  - name: tennis
-    _template: hobby
-  - name: guitars
-    _template: hobby
-  - name: music writing
+  - name: plane pilot
     _template: hobby
 ---
 
