@@ -1,0 +1,36 @@
+fragment ProjectsParts on Projects {
+  __typename
+  projects {
+    __typename
+    ... on ProjectsProjectsProject {
+      key
+      title
+      url
+      description
+      flag
+    }
+  }
+}
+
+fragment AboutParts on About {
+  __typename
+  name
+  description
+  links {
+    __typename
+    ... on AboutLinksLink {
+      name
+      url
+    }
+  }
+}
+
+fragment HobbiesParts on Hobbies {
+  __typename
+  hobbies {
+    __typename
+    ... on HobbiesHobbiesHobby {
+      name
+    }
+  }
+}
