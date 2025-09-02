@@ -1,5 +1,7 @@
 ---
 hobbies:
+  - name: coffee
+    _template: hobby
   - name: guitars
     _template: hobby
   - name: tennis
