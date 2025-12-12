@@ -1,5 +1,11 @@
 ---
 projects:
+  - key: coocook
+    title: "\U0001F426 CooCook"
+    description: |
+      AI cooking assistant and recipe book
+    flag: hidden
+    _template: project
   - key: kalahari
     title: "\U0001F1F3\U0001F1E6 Kalahari Deals"
     url: 'https://kalaharideals.com'
