@@ -64,7 +64,7 @@ export default defineConfig({
                   {
                     name: "flag",
                     type: "string",
-                    options: ["online", "discontinued", "hidden"],
+                    options: ["online", "discontinued", "hidden", "inprogress"],
                     ui: {
                       component: "select",
                     },
